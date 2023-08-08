@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import { CgProfile } from 'react-icons/cg';
 import { AiOutlineHeart } from 'react-icons/ai';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
+import { AdidasProducts } from '../../Products/AdidasProducts';
 
-const SingleAdidasShoe = ({name, gender, brand, imageURL,price}) => {
+const SingleAdidasShoe = ({name, gender, brand, imageURL,price, addToCart, adidasProduct}) => {
 
   const styles = {
     padding: "1rem",
@@ -26,9 +26,8 @@ const SingleAdidasShoe = ({name, gender, brand, imageURL,price}) => {
             </div>
 
             <div className='icons'>
-              <CgProfile style = {styles}/>
-              <AiOutlineHeart style = {styles}/>
-              <AiOutlineShoppingCart style = {styles}/>
+              <button ><AiOutlineHeart style = {styles}/></button>
+              <button onClick={() => addToCart(adidasProduct)}><AiOutlineShoppingCart style = {styles}/></button>
           </div>
         </div>      
       </div>
@@ -54,6 +53,7 @@ const ProductContainer = styled.div`
   }
   .icons{
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
   }
 
@@ -65,6 +65,11 @@ const ProductContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  button{
+    margin: .5rem;
+    background-color: transparent;
+    border: transparent;
   }
 `
 

@@ -2,9 +2,6 @@ import React from 'react'
 import MosaicGallery from '../Components/MosaicGallery'
 import Details from '../Components/Details'
 import About from '../Components/About'
-import Banner from '../Components/Banner'
-import Footer from '../Components/Footer'
-
 
 
 const Home = () => {
@@ -14,8 +11,7 @@ const Home = () => {
         <MosaicGallery/>
         <Details/>
         <About/>
-        <Banner/>
-        <Footer/>
+
     </div>
   )
 }

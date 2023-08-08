@@ -1,36 +1,83 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const About = () => {
   return (
     <Container>
-        <h1>Sneakers<span>&#128095;</span></h1>
+      <div className="about">
+        <h1>
+          Sneakers<span>&#128095;</span>
+        </h1>
         <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio dolor quis aliquid vitae earum perspiciatis suscipit debitis quia voluptatibus, at natus labore laboriosam ipsa commodi impedit magnam quod incidunt. Quia.
-            Temporibus, neque. Voluptatem labore fuga nobis commodi et corporis assumenda perferendis debitis eaque aliquid soluta mollitia blanditiis dolorem modi fugit quasi illum nam praesentium, excepturi, tempora dolorum quia. Sit, totam?
-            Nam doloremque quibusdam culpa quo vitae dolores maxime eum sapiente id voluptate, labore eveniet explicabo soluta! Dolores minima impedit optio. Vitae fugiat aliquid possimus dolores impedit odio optio ducimus illum.
-            Debitis ea rem placeat fugiat dignissimos neque sint illo velit nam recusandae optio, natus ad? Dignissimos aperiam enim facilis eligendi ex facere molestiae laboriosam aliquid temporibus quod, provident corporis ea.
-            nctio aliquam quae placeat similique odit obcaecati quod facilis modi atque, vero doloremque, sed reprehenderit? Esse, blanditiis qui!
+          Welcome to our website, the ultimate destination for second-hand
+          sneakers. We are passionate about sneakers and believe that every pair
+          deserves a second chance. Our mission is to provide sneaker
+          enthusiasts with a wide selection of premium second-hand sneakers at
+          affordable prices, while promoting sustainability and reducing waste
+          in the fashion industry.
+          <br></br>
+          At SneakerLand, we carefully curate and inspect every pair of sneakers
+          before listing them for sale. We work with trusted sellers to ensure
+          that all sneakers are authentic and in excellent condition. Our team
+          of sneaker experts is dedicated to providing a seamless shopping
+          experience and helping you find the perfect pair.
         </p>
-      
+      </div>
+      <div className="values">
+        <h1>Our Values</h1>
+        <ul>
+          <li>Authenticity</li>
+          <li>Quality</li>
+          <li>Sustainability</li>
+          <li>Customer Satisfaction</li>
+        </ul>
+      </div>
     </Container>
-  )
-}
+  );
+};
 const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  font-size: 2rem;
+  font-family: "Press Start 2P", cursive;
+  margin-bottom: 1rem;
+
+  .about {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap-reverse;
     flex-direction: column;
-    font-size: 2rem;
-    margin-left: 15rem;
-    margin-right: 15rem;
-    font-family: 'Beth Ellen', cursive;
+    margin: 2rem;
+  }
+  .values {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
 
-    h1{
-      font-family: 'Press Start 2P', cursive;
-      color: red;
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap ;
+    list-style-type: none;
+    width: 100%;
+
+    li {
+      font-size: 1.5rem;
+      margin-top: 2rem;
     }
-`
+  }
 
-export default About
+  h1 {
+    font-family: "Press Start 2P", cursive;
+    color: red;
+  }
+`;
+
+export default About;

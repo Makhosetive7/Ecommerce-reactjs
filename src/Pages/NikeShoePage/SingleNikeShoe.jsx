@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { CgProfile } from 'react-icons/cg';
 import { AiOutlineHeart } from 'react-icons/ai';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 
@@ -25,9 +24,10 @@ const SingleNikeShoe = ({name, gender, price, imageURL}) => {
             </div>
 
             <div className='icons'>
-              <CgProfile style = {styles}/>
-              <AiOutlineHeart style = {styles}/>
-              <AiOutlineShoppingCart style = {styles}/>
+              
+              <button><AiOutlineHeart style = {styles}/></button>
+              <button><AiOutlineShoppingCart style = {styles}/></button>
+              
           </div>
         </div>      
       </div>
@@ -54,6 +54,7 @@ const ProductContainer = styled.div`
   }
   .icons{
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
   }
 
@@ -65,6 +66,11 @@ const ProductContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  button{
+    margin: .5rem;
+    background-color: transparent;
+    border: transparent;
   }
 `
 export default SingleNikeShoe

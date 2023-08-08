@@ -75,7 +75,7 @@ const Container = styled.div`
     .form__input:placeholder-shown + .form__label {
       display: flex;
       justify-content: center;
-      align-items: center
+      align-items: center;
       opacity: 0;
       visibility: hidden;
       -webkit-transform: translateY(-4rem);
