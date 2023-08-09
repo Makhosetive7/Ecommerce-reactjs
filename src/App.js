@@ -5,15 +5,9 @@ import Footer from "./Components/Footer"
 import AdidasPage from "./Pages/AdidasShoePage/AdidasPage"
 import NikePage from "./Pages/NikeShoePage/NikePage";
 import PumaPage from "./Pages/PumaShoePage/PumaPage";
-import { useState } from "react";
-
-
-
 
 
 function App() {
-
-  const [cart, setCart] = useState([])
   return (
     <div className="App">
         <NavBar/>

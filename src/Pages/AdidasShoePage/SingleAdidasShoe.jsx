@@ -39,7 +39,6 @@ const SingleAdidasShoe = ({name, gender, brand, imageURL,price, addToCart, adida
 const ProductContainer = styled.div`
   padding: 5px;
   width: 450px;
-  margin: 10px;
   text-align: center;
   font-family: 'Press Start 2P', cursive;
   font-size: 1rem;
